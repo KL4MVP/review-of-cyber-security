@@ -2,15 +2,15 @@
 
 ## 1. TCP/IP协议层
 
-![截屏2020-04-22 上午10.22.26](/Users/keliang/Library/Application Support/typora-user-images/截屏2020-04-22 上午10.22.26.png)
+<img src="./screenshot/截屏2020-04-22 上午10.22.26.png" alt="截屏2020-04-22 上午10.22.26.png"/>
 
 ##  2. 常见攻击方式
 
-![截屏2020-04-22 上午10.29.48](/Users/keliang/Library/Application Support/typora-user-images/截屏2020-04-22 上午10.29.48.png)
+<img src="./screenshot/截屏2020-04-22 上午10.29.48.png" alt="截屏2020-04-22 上午10.29.48.png"/>
 
 ## 3. TCP/IP协议常见缺陷
 
-![截屏2020-04-22 上午10.32.36](/Users/keliang/Library/Application Support/typora-user-images/截屏2020-04-22 上午10.32.36.png)
+<img src="./screenshot/截屏2020-04-22 上午10.32.36.png" alt="截屏2020-04-22 上午10.32.36.png"/>
 
 ## 4. 各类攻击详解
 
@@ -20,7 +20,7 @@
 
 工具：netwox 52     netwox 76
 
-![截屏2020-04-22 上午10.48.46](/Users/keliang/Library/Application Support/typora-user-images/截屏2020-04-22 上午10.48.46.png)
+<img src="./screenshot/截屏2020-04-22 上午10.48.46.png" alt="截屏2020-04-22 上午10.48.46.png"/>
 
 防御手段：
 
@@ -31,7 +31,7 @@
 
 ARP协议工作原理：
 
-![截屏2020-04-22 上午11.04.20](/Users/keliang/Library/Application Support/typora-user-images/截屏2020-04-22 上午11.04.20.png)
+<img src="./screenshot/截屏2020-04-22 上午11.04.20.png" alt="截屏2020-04-22 上午11.04.20.png"/>
 
 ARP欺骗：发送伪造ARP消息，对特定IP所对应的MAC地址进行假冒欺骗，从而达到恶意目的。ARP欺骗攻击的根源在于ARP协议在设计时认为局域网内部的所有用户都是可信的，当攻击者渗透进入内网后，通过向局域网内节点缓存中注入伪造的IP/MAC映射关系，从而进行欺骗，成为局域网内 的中间人节点，即可以监听并进一步篡改数据包。
 
@@ -54,7 +54,7 @@ ICMP控制报文协议：它是TCP/IP协议簇的一个子协议，用于在IP�
 
 攻击原理：ICMP路由重定向攻击(ICMPRedirectAttack)是指攻击者伪装成路由器发送虚假的ICMP路由路径控制报 文，使得受害主机选择攻击者指定的路由路径，从而进行嗅探或假冒攻击的一种技术。
 
-![截屏2020-04-22 下午2.24.53](/Users/keliang/Library/Application Support/typora-user-images/截屏2020-04-22 下午2.24.53.png)
+<img src="./screenshot/截屏2020-04-22 下午2.24.53.png" alt="截屏2020-04-22 下午2.24.53.png"/>
 
 工具：netwox 86
 
@@ -82,7 +82,7 @@ TCP RST：TCP协议头部有一个标志位称为RST位，正常的数据包中�
 
 TCP会话劫持：目标是劫持通信双方已建立的TCP会话 连接，假冒其中一方(通常是客户端)的身份，与 另一方进行进一步通信。
 
-![截屏2020-04-22 下午2.42.25](/Users/keliang/Library/Application Support/typora-user-images/截屏2020-04-22 下午2.42.25.png)
+<img src="./screenshot/截屏2020-04-22 下午2.42.25.png" alt="截屏2020-04-22 下午2.42.25.png"/>
 
 工具：ettercap
 
@@ -99,7 +99,7 @@ TCP会话劫持：目标是劫持通信双方已建立的TCP会话 连接，假�
 
 TCP三次握手流程：
 
-<img src="/Users/keliang/Library/Application Support/typora-user-images/截屏2020-04-22 下午3.51.34.png" alt="截屏2020-04-22 下午3.51.34" style="zoom:67%;" />
+<img src="./screenshot/截屏2020-04-22 下午3.51.34.png" alt="截屏2020-04-22 下午3.51.34" style="zoom:67%;" />
 
 攻击流程：攻击者向被攻击者发起大量的SYN包(第一次握手包)， 并且伪装源IP地址。被攻击者会发送SYN-ACK(第二次 握手包)到假造的IP地址，因此永不可能收到ACK(第三 次握手包)。这样被攻击者将会等待ACK(第三次握手包) 的达到，从而占用内存和CPU的负载。通常把没有完全建 立起来的连接称为半开连接，大量半开连接的存在将使得 正常用户无法和被攻击者建立正常的TCP连接，从而无法提供正常的服务。
 
