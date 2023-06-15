@@ -2,7 +2,7 @@
 
 ## 1. TCP/IP协议层
 
-<img src="./screenshot/截屏2020-04-22 上午10.22.26.png"/>
+<img src="./screenshot/截屏2020-04-22 上午10.22.26.png">
 
 ##  2. 常见攻击方式
 
